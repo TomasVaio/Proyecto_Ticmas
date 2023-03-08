@@ -1,0 +1,82 @@
+.nav-item:hover{
+background-color: rgb(5, 5, 5,0.2);
+}
+
+.imagen{ 
+    background: url(Images/Fondo.jpg) no-repeat fixed top/contain;
+}
+
+.foto{
+    left: 43.5%;
+    bottom:49%;
+    border:solid white;
+    border-width: 5px;
+    background-image:url(Images/FotoPerfil.jpg);
+}
+
+.color{
+    background-color: rgba(64, 66, 66, 0.4);
+}
+
+.titulos{
+    text-align: center;
+    color: white;
+}
+
+.titulo{
+    background-attachment: scroll;
+    padding: 2% 7% 0% 7%;
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.subtitulo{
+    padding: 0% 7% 6% 7%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.elements{
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    font-family: lato;
+    border-top:solid white;
+    text-align: center;
+    background-color: white;
+    margin-top: 1%;
+}
+
+.modal-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2; 
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#modal-content{
+    background-color: aliceblue;
+    width: 450px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 1px 1px 5px;
+}   
+@media (min-width:720px) {
+    .foto{
+        bottom: 41%;
+    }
+}
+@media (min-width:1400px) {
+    .foto{
+        bottom: 49%;
+    }
+}
